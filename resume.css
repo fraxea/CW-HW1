@@ -1,0 +1,65 @@
+a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 1.5rem;
+}
+
+a:active , a:hover {
+    color: #ffff00;
+    background-color: #000090;
+}
+
+.navbar {
+    background-color: #0000b2;
+    margin: 0 0;
+}
+
+.menue {
+    height: 2.5rem;
+    font-size: 2rem;
+}
+
+p {
+    padding-right: 50rem;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    float: right;
+    margin: 0 10rem;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+}
+
+#demo {
+    padding-bottom: 20rem;
+}
+
+.input1 {
+    width: 13rem;
+}
+
+.input2 {
+    width: 30rem;
+}
+
+button {
+    width: 5rem;
+    height: 2rem;
+    background-color: #0000f2;
+    color: #fff;
+}
+
+button:hover, button:active {
+    background-color: #0000b2;
+}

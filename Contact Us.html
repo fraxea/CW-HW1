@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="resume.css">
+    </head>
+    <body>
+        <div>
+            <div class="menue navbar">
+                <a href="Introduction.html">Introduction</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Achivements.html">Achivements</a>
+                <a href="Contact Us.html">Contact Us</a>
+            </div>
+            <form method="post" action="resume.php">
+            <table>
+                <tr>
+                    <th>Enter your First name:</th>
+                    <th><input for="fname" id="demo2" type="text"></th>
+                    <th>Enter your Last name:</th>
+                    <th><input for="lname" id="demo3" type="text"></th>
+                </tr>
+            </table>
+            Enter your Email Address:
+            <input for="email" id="demo4" type="email" class="input1">
+            <br>
+            Type your message:
+            <input for="message" id="demo5" type="text" class="input2">
+            <br>
+            <input type="submit" onclick="_submit()" value="Submit!">
+            </form>
+            <div id="dv" style="display: none;">
+                <p style="color: #ff0000;">
+                    Are you sure you want to send it?
+                </p>
+                <button type="button" onclick="final(); _yes()">
+                    Yes
+                </button>
+                <button type="button" onclick="final()">
+                    No
+                </button>
+            </div>
+            <p id="msg" style="display: none; color: #ff0000;">You have to fill the required fields!</p>
+            <p id="demo#" style="display:none; color: #0000b2;">Your request was successfully done!</p>
+            <script>
+                function _submit() {
+                    if ((document.getElementById('demo2').value!="")&&
+                    (document.getElementById('demo3').value!="")&&
+                    (document.getElementById('demo4').value!="")&&
+                    (document.getElementById('demo5').value!="")) {
+                        document.getElementById('msg').style="display: none;";
+                        document.getElementById('dv').style="display: flex;";
+                        document.getElementById('demo#').style="display: none;";
+                    }
+                    else {
+                        document.getElementById('msg').style="display: flex; color: #ff0000;";
+                    }
+                }
+                function final() {
+                    document.getElementById('dv').style="display: none;";
+                }
+                function _yes() {
+                    document.getElementById('demo#').style="color: #0000b2;";
+                }
+            </script>
+        </div>
+        <div class="footer navbar">
+            <center>
+                <a href="mailto:moh788672@gmail.com">Email</a>|
+                <a href="https://github.com/fraxea">Git Hub</a>|
+                <a href="https://stackoverflow.com/users/20734706/fraxea">Stack Overflow</a>
+            </center>
+        </div>
+    </body>
+</html>
